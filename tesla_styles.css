@@ -1,0 +1,63 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: aqua;
+} 
+
+nav{
+    width: 100%;
+    position: fixed;
+}
+
+.nav-top{
+    /*width: 100%;  precisa?, já ta herdando*/
+    height: 3rem;
+    display: flex;
+    background-color: red;
+}
+
+.nav-top a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    height: auto;
+    margin: auto;
+    position: relative;
+    line-height: 3rem;
+    vertical-align: middle;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-top a:hover{
+    cursor: pointer;
+    text-decoration: underline 2px;
+}
+
+.nav-bottom{
+    height: 8rem;
+    margin: 1rem 2,5rem;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+}   
+
+nav img{
+    height: 8rem;
+    width: auto;
+}
+
+.nav-list a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: coral;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 8px;
+}
+
+.nav-list{
+    display: flex;
+}
