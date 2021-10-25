@@ -1,0 +1,496 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255);
+} 
+
+nav{
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-top{
+    /*width: 100%;  precisa?, já ta herdando*/
+    height: 1.5rem;
+    background-color: rgb(30, 17, 212, 80%);
+    text-align: center;
+    
+}
+
+.nav-top strong{
+    position:relative; /*precisa?*/
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: bold;
+    height: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.nav-top a{
+    position: relative;
+    margin: auto;
+    height: auto;
+    margin: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    height: 1rem;
+}
+
+.nav-top a:hover{
+    cursor: pointer;
+    text-decoration: underline 2px;
+}
+
+.nav-bottom{
+    height: 4rem;
+    margin: 0.5rem 1rem;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}   
+
+.nav-middle a{
+    margin-left: 2rem;
+}
+
+.nav-left img{
+    height: 4rem;
+    width: auto;
+}
+
+.nav-list a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: coral;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1rem 10px;
+    height: 1rem;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-list a:hover{
+    cursor: pointer;
+    background-color: rgb(168, 9, 3);
+    border-radius: 5px;
+    transition: 500ms ease;
+    margin-top: 1rem;
+}
+
+.nav-small{
+    display: none;
+} 
+
+@media only screen and (max-width : 1100px){
+    .nav-list{
+        display:none;
+    }
+    .nav-small{
+        display: inherit;
+    }
+    .nav-small a{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 1.3rem 10px;
+        background-color: rgb(245, 37, 30, 30%);
+        border-radius: 5px;
+    }
+}
+
+.straw-hat{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+#Luffy{
+    position: relative;
+    background-image: url(./pics/Luffy.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 2160px){
+    #Luffy{
+        position: relative;
+        background-image: url(./pics/Luffy-phone.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1025px){
+    #Luffy{
+        position: relative;
+        background-image: url(./pics/Luffy-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+#Zoro{
+    position: relative;
+    background-image: url(./pics/Zoro.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1260px){
+    #Zoro{
+        position: relative;
+        background-image: url(./pics/Zoro-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    #Zoro{
+        position: relative;
+        background-image: url(./pics/Zoro-phone.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+#Usopp{
+    position: relative;
+    background-image: url(./pics/Usopp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    #Usopp{
+        position: relative;
+        background-image: url(./pics/Usopp-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#Sanji{
+    position: relative;
+    background-image: url(./pics/Sanji.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+
+#Nami{
+    position: relative;
+    background-image: url(./pics/Nami);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px){
+    #Nami{
+        position: relative;
+        background-image: url(./pics/Nami-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#Chopper{
+    position: relative;
+    background-image: url(./pics/Chopper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#Franky{
+    position: relative;
+    background-image: url(./pics/Franky.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#Robin{
+    position: relative;
+    background-image: url(./pics/Robin.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    #Robin{
+        position: relative;
+        background-image: url(./pics/Robin-mobile.gif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#Brook{
+    position: relative;
+    background-image: url(./pics/Brook.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 750px){
+    #Brook{
+        position: relative;
+        background-image: url(./pics/Brook-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#Jimbe{
+    position: relative;
+    background-image: url(./pics/Jimbe.jpg_large);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 630px) and (max-width: 800px){
+    #Jimbe{
+        position: relative;
+        background-image: url(./pics/Jimbe-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    #Jimbe{
+        position: relative;
+        background-image: url(./pics/Jimbe-phone.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+    
+
+#coming-soon{
+    position: relative;
+    background-image: url(./pics/Ship.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1100px){
+    #coming-soon{
+        position: relative;
+        background-image: url(./pics/Ship-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #coming-soon{
+        position: relative;
+        background-image: url(./pics/Ship-phone.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.straw-hat .content{
+    position: relative;
+    display: block;
+    min-height: 100%;
+    min-width: 256px;
+    width: 610px;
+}
+
+.straw-hat .top{
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.straw-hat h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+#Luffy h1{
+    color: red;
+}
+
+#Zoro h1{
+    color: green;
+}
+
+#Usopp h1{
+    color: yellow;
+}
+
+#Sanji h1{
+    color: greenyellow;
+}
+
+#Nami h1{
+    color: orange;
+}
+
+#Nami .top{
+    margin-top: 15rem;
+}
+
+#Chopper h1{
+    color: palevioletred;
+}
+
+#Franky h1{
+    color: aqua;
+}
+
+#Robin h1{
+    color: rgb(54, 4, 102);
+}
+
+#Brook h1{
+    color:rgb(155, 6, 214);
+}
+
+#Jimbe h1{
+    color:blue;
+}
+
+.straw-hat .bottom{
+    position:absolute;
+    bottom: 10rem;
+    display: flex;
+    min-height: 30px;
+    min-width: 256px;
+    width: 610px;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.straw-hat .unique{
+    position:relative;
+    display: flex;
+    min-height: 30px;
+    justify-content: center;
+    bottom: -33rem;
+}
+
+.straw-hat .bottom button, .straw-hat .unique button{
+    border: none;
+    border-radius: 15px;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 256px;
+}
+
+@media only screen and (max-width: 610px){
+    .straw-hat .bottom{
+        width: auto;
+        justify-content: center;
+    }
+    .straw-hat .bottom button{
+        min-width: 90%;
+        margin-top: 1rem;
+    }
+}
+
+footer{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 1rem;
+    z-index: visible;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+footer .fotter-content a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 1.5rem;
+}
