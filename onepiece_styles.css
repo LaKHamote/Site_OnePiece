@@ -449,11 +449,11 @@ nav{
 }
 
 .straw-hat .unique{
-    position:relative;
-    display: flex;
+    position: absolute;
     min-height: 30px;
+    bottom: 6rem;
     justify-content: center;
-    bottom: -33rem;
+    left: 25%;
 }
 
 .straw-hat .bottom button, .straw-hat .unique button{
